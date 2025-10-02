@@ -1,16 +1,23 @@
 #include <stdio.h>
 
-int main(void) {
-    int a = 16;
-    int b = 3;
-    printf("Addition : %d\n", a + b);
-    printf("Soustraction : %d\n", a - b);
-    printf("Multiplication : %d\n", a * b);
-    printf("Division : %d\n", a / b);
-    printf("Modulo (reste division de a par b) : %d\n", a % b);
-    printf("a est-il egal a b : %d\n", a == b);       
-    printf("a est-il superieur a b : %d\n", a > b);  
-
+int main() {
+    int num1, num2;
+    char op;
+    
+    printf("Entrez num1 op num2: ");
+    scanf("%d %c %d", &num1, &op, &num2);
+    
+    printf("%d %c %d = ", num1, op, num2);
+    
+    if (op == '+') printf("%d\n", num1 + num2);
+    else if (op == '-') printf("%d\n", num1 - num2);
+    else if (op == '*') printf("%d\n", num1 * num2);
+    else if (op == '/') printf(num2 ? "%d\n" : "Erreur: division par zero\n", num1 / num2);
+    else if (op == '%') printf(num2 ? "%d\n" : "Erreur: modulo par zero\n", num1 % num2);
+    else if (op == '&') printf("%d\n", num1 & num2);
+    else if (op == '|') printf("%d\n", num1 | num2);
+    else if (op == '~') printf("%d\n", ~num1);
+    else printf("Operateur non reconnu\n");
+    
     return 0;
 }
-
