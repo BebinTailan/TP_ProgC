@@ -31,7 +31,7 @@ int main() {
         j++;
     }
     concat[i] = '\0';
-    printf("Concaténation : %s\n", concat);
+    printf("Concatenation : %s\n", concat);
 
     return 0;
 }
