@@ -20,7 +20,7 @@ int main(void) {
         printf("Adresse: %s\n", adresses[i]);
         printf("Note 1: %.2f\n", notes_prog[i]);
         printf("Note 2: %.2f\n", notes_sys[i]);
-        printf("-------------------------\n");
+        printf("\n");
     }
 
     return 0;

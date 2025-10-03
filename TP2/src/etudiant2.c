@@ -52,7 +52,7 @@ int main(void) {
         printf("Adresse: %s\n", etudiants[i].adresse);
         printf("Note 1: %.2f\n", etudiants[i].note_prog);
         printf("Note 2: %.2f\n", etudiants[i].note_sys);
-        printf("-------------------------\n");
+        printf("\n");
     }
 
     return 0;
